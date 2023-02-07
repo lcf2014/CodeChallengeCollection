@@ -14,7 +14,7 @@ public class Solution {
         }
 
         List<Map.Entry<String, Integer>> points = new ArrayList<>(votingSessionResults.entrySet());
-        points.sort(Map.Entry.comparingByValue(Comparator.reverseOrder())); // O(n.log n)
+        points.sort(Map.Entry.comparingByValue(Comparator.reverseOrder()));
 
         HashMap<Integer, String> votingSessionResult = new HashMap<>();
         int j = 0;
